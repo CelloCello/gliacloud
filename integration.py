@@ -10,7 +10,7 @@ def integrate(fun, start, end):
     area = 0
     while intercept < end:
         intercept += step
-        y = anonymous(intercept)
+        y = fun(intercept)
         area += step * y
     return area
 
